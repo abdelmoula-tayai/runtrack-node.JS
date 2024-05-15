@@ -37,4 +37,5 @@ db.product.find({$or: [{ price: { $gt: 14.99 } },{ quantity:{ $gt: 100 } }]})
 Job 13
 db.Product.find({}, { _id: 0 })
 
-
+Job 14
+db.category.findOne({"_id": ObjectId('6644d53c3a12e1ed895958c7')})4
