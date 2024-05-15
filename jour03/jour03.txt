@@ -1,2 +1,7 @@
 Job 2
 show dbs
+
+Job 03
+use Shop
+db.createCollection("Product")
+db.Product.insertOne({"name" : "chaussure", "description" : "une paire de chassures", "price" : "35", "quantity" : "120"})
