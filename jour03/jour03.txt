@@ -12,3 +12,7 @@ db.Product.insertMany([{"name" : "pantalon noir", "description" : "Un pantalon n
 Job 05
 db.createCollection("category")
 db.category.insertMany([{"name" : "vetement"}, {"name" : "chaussure"}, {"name" : "enfant"}])
+
+Job06
+show collections
+
