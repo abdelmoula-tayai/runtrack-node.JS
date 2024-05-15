@@ -21,3 +21,16 @@ db.category.find()
 
 Job 08
 db.category.find().limit(2)
+
+Job 09
+db.Product.find().sort({ "price": 1 })
+
+Job 10
+db.Product.find().sort({ "price": -1 })
+
+Job 11
+db.product.find({ price: {$gt:5}, quantity:{$lt:100}})
+
+Job 12
+
+db.product.find({$or: [{ price: { $gt: 14.99 } },{ quantity:{ $gt: 100 } }]})
