@@ -32,5 +32,9 @@ Job 11
 db.product.find({ price: {$gt:5}, quantity:{$lt:100}})
 
 Job 12
-
 db.product.find({$or: [{ price: { $gt: 14.99 } },{ quantity:{ $gt: 100 } }]})
+
+Job 13
+db.Product.find({}, { _id: 0 })
+
+
