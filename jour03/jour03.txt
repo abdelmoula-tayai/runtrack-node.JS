@@ -1,7 +1,10 @@
-Job 2
+Job 02
 show dbs
 
 Job 03
 use Shop
 db.createCollection("Product")
 db.Product.insertOne({"name" : "chaussure", "description" : "une paire de chassures", "price" : "35", "quantity" : "120"})
+
+Job 04
+db.Product.insertMany([{"name" : "pantalon noir", "description" : "Un pantalon noir", "price" : "14.99", "quantity" : "12"}, {"name" : "chaussettes", "description" : "chaussettes cool", "price" : "6", "quantity" : "6"}])
