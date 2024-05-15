@@ -16,3 +16,5 @@ db.category.insertMany([{"name" : "vetement"}, {"name" : "chaussure"}, {"name" :
 Job06
 show collections
 
+job07
+db.category.find()
