@@ -42,3 +42,33 @@ db.category.findOne({"_id": ObjectId('6644d53c3a12e1ed895958c7')})4
 
 Job 15
 db.category.updateOne({ "name": "enfant" }, { $set: { "name": "Vetements pour enfant" } })
+
+Job 16
+db.product.updateOne({ name: "chaussure" }, { $set: { category_id: ObjectId("6644d53c3a12e1ed895958c6") } })
+db.product.updateOne({ name: "chaussettes" }, { $set: { category_id: ObjectId("6644d53c3a12e1ed895958c5") } })
+db.product.updateOne({ name: "pantalon noir" }, { $set: { category_id: ObjectId("6644d53c3a12e1ed895958c5") } })
+
+db.product.aggregate([
+    {
+        $lookup: {
+            from: "category",
+            localField: "category_id",
+            foreignField: "_id",
+            as: "category"
+        }
+    },
+    {
+        $unwind: "$category" 
+    },
+    {
+        $project: {
+            "_id": 1,
+            "name": 1,
+            "description": 1,
+            "price": 1,
+            "quantity": 1,
+            "category.name": 1,
+            "category._id": 1
+        }
+    }
+])
