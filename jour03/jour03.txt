@@ -13,8 +13,11 @@ Job 05
 db.createCollection("category")
 db.category.insertMany([{"name" : "vetement"}, {"name" : "chaussure"}, {"name" : "enfant"}])
 
-Job06
+Job 06
 show collections
 
-job07
+Job 07
 db.category.find()
+
+Job 08
+db.category.find().limit(2)
