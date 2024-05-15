@@ -39,3 +39,6 @@ db.Product.find({}, { _id: 0 })
 
 Job 14
 db.category.findOne({"_id": ObjectId('6644d53c3a12e1ed895958c7')})4
+
+Job 15
+db.category.updateOne({ "name": "enfant" }, { $set: { "name": "Vetements pour enfant" } })
