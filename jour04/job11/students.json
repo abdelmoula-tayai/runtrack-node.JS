@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "lastname": "LeBricoleur",
+    "firstname": "Bob",
+    "students_number": 145,
+    "year": "Bachelor 1"
+  },
+  {
+    "id": 2,
+    "lastname": "Doe",
+    "firstname": "John",
+    "students_number": 237,
+    "year": "Bachelor 2"
+  },
+  {
+    "id": 3,
+    "lastname": "Dupont",
+    "firstname": "Marine",
+    "students_number": 317,
+    "year": "Bachelor 3"
+  }
+]
