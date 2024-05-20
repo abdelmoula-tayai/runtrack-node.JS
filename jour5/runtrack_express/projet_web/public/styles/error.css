@@ -1,0 +1,22 @@
+.error404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.error404 h1 {
+    font-size: 88px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.error404 p {
+    font-size: 64px;
+    color: #333333;
+    margin-bottom: 10px;
+}
